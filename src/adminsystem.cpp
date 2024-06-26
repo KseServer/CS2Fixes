@@ -617,7 +617,7 @@ CON_COMMAND_CHAT_FLAGS(slap, "<name> [damage] - slap a player", ADMFLAG_SLAY)
 	PrintMultiAdminAction(nType, pszCommandPlayerName, "slapped");
 }
 
-CON_COMMAND_CHAT_FLAGS(goto, "<name> - teleport to a player", ADMFLAG_SLAY)
+CON_COMMAND_CHAT(goto, "<name> - teleport to a player")
 {
 	// Only players can use this command at all
 	if (!player)
@@ -662,7 +662,7 @@ CON_COMMAND_CHAT_FLAGS(goto, "<name> - teleport to a player", ADMFLAG_SLAY)
 	}
 }
 
-CON_COMMAND_CHAT_FLAGS(bring, "<name> - bring a player", ADMFLAG_SLAY)
+CON_COMMAND_CHAT(bring, "<name> - bring a player")
 {
 	if (!player)
 	{
